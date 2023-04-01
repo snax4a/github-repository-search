@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "13.2.4",
@@ -15,6 +16,8 @@
     "zod": "3.21.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.5.1",
+    "@commitlint/config-conventional": "17.4.4",
     "@types/eslint": "8.37.0",
     "@types/node": "18.15.11",
     "@types/prettier": "2.7.2",
@@ -25,10 +28,21 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "husky": "8.0.3",
+    "lint-staged": "^13.2.0",
     "postcss": "8.4.21",
     "prettier": "2.8.7",
     "prettier-plugin-tailwindcss": "0.2.6",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.3"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0",
+      "prettier --write"
+    ],
+    "src/**/*.{html,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
