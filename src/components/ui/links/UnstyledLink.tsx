@@ -16,10 +16,14 @@ const UnstyledLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
 
     if (!isExternalLink && !openNewTab) {
       return (
-        <Link href={href} {...nextLinkProps}>
-          <a ref={ref} {...rest} className={className}>
-            {children}
-          </a>
+        <Link
+          ref={ref}
+          href={href}
+          className={className}
+          {...nextLinkProps}
+          {...rest}
+        >
+          {children}
         </Link>
       );
     }

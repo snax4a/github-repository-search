@@ -1,9 +1,7 @@
-import { type AppType } from "next/dist/shared/lib/utils";
+import type { AppProps } from "next/app";
 
 import "@/styles/globals.css";
 
-const App: AppType = ({ Component, pageProps }) => {
+export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
-};
-
-export default App;
+}
