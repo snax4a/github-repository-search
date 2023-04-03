@@ -96,7 +96,7 @@ export default function RepositoriesTable() {
             </TableDataCell>
             <TableDataCell>
               <p className="whitespace-normal text-sm text-gray-500">
-                {repository.description}
+                {truncate(repository.description ?? "", 300)}
               </p>
             </TableDataCell>
             <TableDataCell>
