@@ -13,6 +13,8 @@ This is a small application that allows you to search for repositories on GitHub
 - Results are cached in memory for 1 minute
 - Loading and error states are displayed when necessary
 
+>I have added husky and commitlint to enforce commit message format. I have also added lint-staged to run linters on staged files before commit.
+
 >I have decided to use RTK Query because there was Redux requirement and I thought that It would be better choice than Tanstack Query because I added Redux Toolkit also. Usually I would use Tanstack Query for this kind of application.
 
 >Btw, I have used Redux Toolkit Query for the first time so I might have not used it in the best way.
