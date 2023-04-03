@@ -15,12 +15,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "class-variance-authority": "0.4.0",
     "clsx": "1.2.1",
     "lucide-react": "0.129.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
     "tailwind-merge": "1.11.0",
     "zod": "3.21.4"
   },
